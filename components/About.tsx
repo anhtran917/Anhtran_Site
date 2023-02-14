@@ -1,4 +1,4 @@
-import user from "@/assets/profile_photo.webp";
+import user from "@/assets/anhTran.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { FaBicycle } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { GiPersonInBed } from "react-icons/gi";
 import { BsImage, BsSnow3 } from "react-icons/bs";
 
 const About = () => {
-  const skills = ["React", "Vue", "React Native", "CSS3"];
+  const skills = ["React", "Vue", "React Native", "Express.js","Sails.js", "PHP", "CSS3"];
   return (
     <div
       id="about"
@@ -78,8 +78,8 @@ const About = () => {
         </div>
         <div className="text-gray-300 flex flex-col gap-4 text-xl leading-8">
           <p className="md:text-left text-center">
-            I'm a Front-End Developer located in Turkey. I have a serious
-            passion for UI effects, animations and creating intuitive, dynamic
+            I'm a Full-Stack Developer located in Fairfax, VA. I have a serious
+            passion for Backend, Frontend and creating intuitive, dynamic
             user experiences.
           </p>
           <p className="md:text-left text-center">
@@ -93,19 +93,10 @@ const About = () => {
             I've built products for companies and businesses around the globe
             ranging from marketing websites to complex solutions and enterprise
             apps with focus on fast, elegant and accessible user experiences.
-            I'm{" "}
           </p>
-          <p className="sm:text-left   text-center">
-            I'm a{" "}
-            <a href="" className="underline text-[rgb(53,91,254)]">
-              CodePen
-            </a>{" "}
-            advocate and share attention-catching demos over on
-            <a href="" className="underline text-[rgb(53,91,254)]">
-              {" "}
-              Twitter
-            </a>
-            .
+          <p className="md:text-left text-center">
+            I've also rich experience in Backend development with using Python,
+            Node.js, Laravel, MongoDB, MySQL, PostgreSQL.
           </p>
           <div className="flex gap-5 mt-4 flex-col">
             <div className="font-bold text-2xl text-white">Best Skills</div>
