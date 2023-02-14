@@ -97,32 +97,44 @@ const Intro = () => {
             i
           </span>
           <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
-            F
+            &nbsp;
+          </span>
+          <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
+            E
+          </span>
+          <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
+            v
+          </span>
+          <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
+            e
+          </span>
+          <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
+            r
+          </span>
+          <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
+            y
           </span>
           <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
             o
           </span>
           <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
-            l
+            n
           </span>
           <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
-            k
+            e
           </span>
           <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
-            s
-          </span>
-          <span className="hover:scale-150 cursor-pointer duration-500 greeting text-6xl transition-transform">
-            &nbsp;!
+            !
           </span>
         </div>
       </div>
       <div className="flex gap-3 flex-col">
         <div className="text-white text-5xl text-center font-bold">
-          I`m Muhammed Erdem
+          I`m Anh Tran
         </div>
-        <div className="text-[rgb(54,91,254)] text-2xl">Front-end Engineer</div>
+        <div className="text-[rgb(54,91,254)] text-2xl">Full Stack Engineer</div>
         <div className="text-gray-300 md:max-w-[35rem]  md:text-left text-center font-light text-xl leading-8">
-          Specialized in front-end development but also like trying out other{" "}
+          Specialized in full stack development but also like trying out other{" "}
           <br />
           technologies in order to become more flexible.
         </div>
@@ -133,7 +145,7 @@ const Intro = () => {
           >
             KNOW ME
           </Link>
-          <Link href="" className="text-gray-300  text-xl">
+          <Link href="/profile.pdf" className="text-gray-300  text-xl">
             Check My Resume
           </Link>
         </div>
@@ -151,7 +163,7 @@ const Intro = () => {
         <div className="absolute flex-col hover:scale-125 duration-500 transition-transform h-[12rem] w-[15vw] xl:w-[12rem] flex items-center justify-center gap-5  top-8 left-32">
           <img src={webanimationIcon.src} className="w-12 z-50" />
           <div className="z-50 text-lg text-white font-bold max-w-[5rem] text-center">
-            Web Animation
+            Backend Development
           </div>
           <img src={WebAnimation.src} className="absolute h-full w-full z-0" />
         </div>

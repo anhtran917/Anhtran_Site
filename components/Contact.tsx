@@ -59,27 +59,15 @@ const Contact = () => {
   const contacts = [
     {
       provider: "Github",
-      link: "github.com/muhammed",
-    },
-    {
-      provider: "Codepen",
-      link: "codepen.com/muhammed",
-    },
-    {
-      provider: "Instagram",
-      link: "instagram.com/muhammed",
-    },
-    {
-      provider: "Twitter",
-      link: "instagram.com/muhammed",
+      link: "https://github.com/anhtran917",
     },
     {
       provider: "Linkedin",
-      link: "instagram.com/muhammed",
+      link: "https://www.linkedin.com/in/anh-tran-584b27260",
     },
     {
       provider: "Behance",
-      link: "instagram.com/muhammed",
+      link: "https://www.behance.net/anhtran917",
     },
   ];
   const validate = (values: any): { name: string; error: string }[] => {
@@ -132,7 +120,7 @@ const Contact = () => {
             </div>
           </div>
           <Link
-            href="#contact"
+            href="mailto:fullstackdeveloper917@gmail.com"
             className="rounded-tl-[13px] font-bold hover:scale-110 transition-transform duration-700 cursor-pointer z-50 text-white px-7 py-3 text-xl bg-[rgb(43,107,233)] rounded-br-[13px]"
           >
             LET'S TALK
@@ -234,22 +222,16 @@ const Contact = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2">
               {contacts.map((contact, index) => (
                 <a
-                  href=""
+                  href={contact.link}
                   className="flex w-full h-fit rounded-lg hover:bg-[rgb(23,26,35)] duration-500 transition-all px-3 py-5 text-white items-start gap-3"
                   key={index}
                 >
                   {contact.provider === "Github" ? (
                     <GitHub sx={{ fontSize: 40 }} />
-                  ) : contact.provider === "Twitter" ? (
-                    <Twitter sx={{ fontSize: 40 }} />
-                  ) : contact.provider === "Instagram" ? (
-                    <Instagram sx={{ fontSize: 40 }} />
                   ) : contact.provider === "Linkedin" ? (
                     <LinkedIn sx={{ fontSize: 40 }} />
-                  ) : contact.provider === "Behance" ? (
-                    <img src={Behance.src} className="w-10" />
                   ) : (
-                    <img src={CodePen.src} className="w-10" />
+                    <img src={Behance.src} className="w-10" />
                   )}
                   <div className="flex flex-col">
                     <div className="font-semibold text-lg">
@@ -276,7 +258,7 @@ const Contact = () => {
                 <img src={Copy.src} className="w-7" />
               </div>
               <div className="text-center w-full font-bold text-lg">
-                {copied ? "copied" : "muhammed@erdem.dev"}
+                {copied ? "copied" : "fullstackdeveloper917@gmail.com"}
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ const Logo: FC<{ animate?: boolean }> = ({ animate }) => {
             : " top-[calc(30%+3px)] text-lg  left-[calc(25%+6px)] "
         } font-[900]`}
       >
-        ME
+        Anh
       </div>
     </div>
   );
