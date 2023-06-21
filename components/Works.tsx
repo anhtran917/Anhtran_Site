@@ -1,5 +1,4 @@
-import work1 from "@/assets/0001.webp";
-import work2 from "@/assets/0002.webp";
+import greenrabbit from "@/assets/greenrabbit.png";
 import { Button } from "@mui/material";
 import { NextPage } from "next";
 import Link from "next/link";
@@ -8,18 +7,18 @@ const WorksComponent: NextPage<{ works?: any[]; sent: boolean }> = ({
   sent,
   works = [
     {
-      year: 2019,
-      name: "Remizihoca Platform",
-      work: "fron-tend developer",
-      desc: "Pixelate Creative",
-      cover: work1.src,
+      year: 2023,
+      name: "YoGo.DK",
+      work: "Full Stack developer",
+      desc: "Vue JS and Sails JS",
+      cover: "https://yogo.dk/wp-content/uploads/2022/06/MacBook-Pro-cropped-900x507.png",
     },
     {
-      year: 2021,
-      desc: "Fabrikod",
-      name: "IDDEF",
-      work: "mobile developer",
-      cover: work2.src,
+      year: 2022,
+      desc: "Svelte and Javascript",
+      name: "Green Rabbit Game",
+      work: "Lead Software Developer",
+      cover: "https://www.greenrabbitgame.io/assets/landing/toppage/landingrabbit.png",
     },
   ],
 }) => {

@@ -8,7 +8,7 @@ import {
   TextFieldProps,
 } from "@mui/material";
 import Behance from "@/assets/behance.svg";
-import CodePen from "@/assets/codepen.svg";
+// import CodePen from "@/assets/codepen.svg";
 import ContactPattern from "@/assets/contact_pattern.webp";
 import useCopy from "use-copy";
 import Copy from "@/assets/copy.svg";
@@ -47,7 +47,7 @@ const RedditTextField = styled((props: TextFieldProps) => (
   },
 }));
 const Contact = () => {
-  const [copied, copy, setCopied] = useCopy("muhammed@erdem.dev");
+  const [copied, copy, setCopied] = useCopy("anhtrandev122@gmail.com");
   const copyText = () => {
     copy();
     setTimeout(() => {
@@ -66,9 +66,21 @@ const Contact = () => {
       link: "https://www.linkedin.com/in/anh-tran-584b27260",
     },
     {
-      provider: "Behance",
-      link: "https://www.behance.net/anhtran917",
+      provider: "Skype",
+      link: "https://join.skype.com/invite/yArxGJY3EuLa",
     },
+    {
+      provider: "Telegram",
+      link: "https://t.me/anhtran917",
+    },
+    {
+      provider: "Discord",
+      link: "https://discord.gg/eZ8j2emt",
+    },
+    // {
+    //   provider: "Behance",
+    //   link: "https://www.behance.net/anhtran917",
+    // },
   ];
   const validate = (values: any): { name: string; error: string }[] => {
     let errors = [];
@@ -120,7 +132,7 @@ const Contact = () => {
             </div>
           </div>
           <Link
-            href="mailto:fullstackdeveloper917@gmail.com"
+            href="mailto:anhtrandev122@gmail.com"
             className="rounded-tl-[13px] font-bold hover:scale-110 transition-transform duration-700 cursor-pointer z-50 text-white px-7 py-3 text-xl bg-[rgb(43,107,233)] rounded-br-[13px]"
           >
             LET'S TALK
@@ -230,7 +242,13 @@ const Contact = () => {
                     <GitHub sx={{ fontSize: 40 }} />
                   ) : contact.provider === "Linkedin" ? (
                     <LinkedIn sx={{ fontSize: 40 }} />
-                  ) : (
+                  ) : contact.provider === "Skype" ? (
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Skype_logo_%282019%E2%80%93present%29.svg" className="w-10" />
+                  ) : contact.provider === "Telegram" ? (
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" className="w-10" />
+                  ) : contact.provider === "Discord" ? (
+                    <img src="https://www.svgrepo.com/show/353655/discord-icon.svg" className="w-10" />
+                  ) :  (
                     <img src={Behance.src} className="w-10" />
                   )}
                   <div className="flex flex-col">
@@ -258,7 +276,7 @@ const Contact = () => {
                 <img src={Copy.src} className="w-7" />
               </div>
               <div className="text-center w-full font-bold text-lg">
-                {copied ? "copied" : "fullstackdeveloper917@gmail.com"}
+                {copied ? "copied" : "anhtrandev122@gmail.com"}
               </div>
             </div>
           </div>
