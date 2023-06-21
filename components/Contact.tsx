@@ -63,7 +63,7 @@ const Contact = () => {
     },
     {
       provider: "Linkedin",
-      link: "https://www.linkedin.com/in/anh-tran-584b27260",
+      link: "https://www.linkedin.com/in/anh-tran122",
     },
     {
       provider: "Skype",
