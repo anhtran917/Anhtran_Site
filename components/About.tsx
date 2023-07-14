@@ -78,7 +78,7 @@ const About = () => {
         </div>
         <div className="text-gray-300 flex flex-col gap-4 text-xl leading-8">
           <p className="md:text-left text-center">
-            I'm a Full-Stack Developer located in Helsinki, Finland. I have a serious
+            I'm a Full-Stack Developer located in Vaasa, Finland. I have a serious
             passion for Backend, Frontend and creating intuitive, dynamic
             user experiences.
           </p>
